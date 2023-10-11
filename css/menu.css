@@ -1,0 +1,41 @@
+.menu-bg {
+  background: var(--p1);
+  padding: 0 20px;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-bg {
+  background: var(--p1);
+  border-top: 1px solid;
+  padding: 0 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.nav a {
+  color: var(--p0);
+  padding: 8px;
+}
