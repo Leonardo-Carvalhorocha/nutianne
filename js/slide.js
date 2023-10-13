@@ -1,16 +1,19 @@
-export default function initSlide() {
-  const imgs = document.querySelectorAll('.slide img');
-  const slide = document.querySelector('.slide');
-  let i = 0;
-
-  function styleTransform(index) {
-    imgs.forEach((img) => {
-      img.style.transform = `translateX(${slidePosition(index)}px)`
-    });
+export default class slide {
+  constructor (imgs, slide) {
+    this.imgs = document.querySelectorAll(imgs);
+    this.slide = document.querySelector(slide);
+    this.count = 0;
   }
 
-  function slidePosition(index) {
-    const slideArray = [...slide.children].map((element) => {
+  styleTransform(index) {
+    const imgArray = [...this.imgs];
+    imgArray.map((img) => {
+      img.style.transform = `translateX(${this.slidePosition(index)}px)`;
+    })
+  }
+
+  slidePosition(index) {
+    const slideArray = Array.from(this.slide.children).map((element) => {
       const position = -element.offsetLeft;
       return {
         element, 
@@ -20,12 +23,19 @@ export default function initSlide() {
     return slideArray[index].position;
   }
 
-  setInterval(() => {
-    i++;
-    if (i < 4) {
-      styleTransform(i);
-    } else {
-      i = -1;
-    }
-  }, 5000);
+  temporizadorSlide(i) {
+    setInterval(() => {
+      this.count++;
+      if (this.count < 4) {
+        this.styleTransform(this.count);
+      } else {
+        this.count = -1;
+      }
+    }, 10000)
+  }
+
+  init() {
+    this.temporizadorSlide();
+    return this;
+  }
 };

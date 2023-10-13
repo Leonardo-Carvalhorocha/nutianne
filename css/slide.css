@@ -14,3 +14,20 @@
   transition: .9s ease-in-out;
   opacity: .7;
 }
+
+.slide-mobile {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  .slide-mobile {
+    display: flex;
+  }
+  .slide-mobile  img{
+    display: flex;
+    justify-content: center;
+  }
+  .slide-desktop {
+    display: none;
+  }
+}
