@@ -52,6 +52,7 @@
     font-size: 26px;
     max-width: 31ch;
     line-height: 1.2;
+    padding: 0 8px;
   }
   .desc-container {
    top: 40px;

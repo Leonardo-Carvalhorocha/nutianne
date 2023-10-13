@@ -19,7 +19,7 @@
   display: none;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
   .slide-mobile {
     display: flex;
   }
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
   }
-  .slide-desktop {
-    display: none;
+  .slide.slide-desktop {
+    display: none !important;
   }
 }
