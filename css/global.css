@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Poppins:wght@400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -17,8 +17,10 @@ img {
   --p0: #ffffff;
   --p1: #216872; /* utilizar no button liner */
   --p2: #238c9a; /* utilizar no button liner */
+  --p3: #000000;
   --fontRegular: 400;
   --fontMedium: 500;
   --fontSemiBold: 600;
   --fontFamily: 'Poppins', sans-serif;
+  --fontFamilyDarling: 'Ingrid Darling', cursive;
 }
