@@ -26,11 +26,7 @@ export default class slide {
   temporizadorSlide(i) {
     setInterval(() => {
       this.count++;
-      if (this.count < 4) {
-        this.styleTransform(this.count);
-      } else {
-        this.count = -1;
-      }
+      this.count < 4 ?  this.styleTransform(this.count) : this.count = -1;
     }, 10000)
   }
 

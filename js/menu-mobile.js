@@ -9,8 +9,9 @@ export default function menuMobile() {
 
   function handleClick(event) {
     event.preventDefault();
-    listNav.classList.toggle('ativo');
-    const expendVerific = listNav.classList.contains('ativo');
+    const classAtivo = 'ativo'
+    listNav.classList.toggle(classAtivo);
+    const expendVerific = listNav.classList.contains(classAtivo);
     if (expendVerific) {
       buttonMobile.setAttribute('aria-expanded', 'abrir Menu');
     } else {
