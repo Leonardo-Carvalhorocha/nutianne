@@ -1,0 +1,48 @@
+.desc-container {
+  position: absolute;
+  top: 120px;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.desc-slide {
+  text-align: center;
+}
+
+.desc-slide h1 {
+  color: var(--p0);
+  font-family: var(--fontFamilyDarling);
+  font-size: 64px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.desc-slide p {
+  color: var(--p0);
+  font-family: var(--fontFamily);
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 20px;
+  max-width: 31ch
+}
+
+.desc-slide button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: var(--fontFamily);
+  font-weight: 600;
+  color: var(--p0);
+  background: linear-gradient(var(--p2), var(--p1));
+  z-index: 1;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.desc-slide button:hover {
+  transform: scale(110%);
+}
