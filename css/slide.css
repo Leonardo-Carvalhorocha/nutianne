@@ -1,0 +1,10 @@
+.slide {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide img {
+  min-height: 100vh;
+  max-width: none;
+  transition: .9s ease-in-out;
+}
