@@ -16,14 +16,13 @@ export default class slide {
     const slideArray = Array.from(this.slide.children).map((element) => {
       const position = -element.offsetLeft;
       return {
-        element, 
         position,
       }
     })
     return slideArray[index].position;
   }
 
-  temporizadorSlide(i) {
+  temporizadorSlide() {
     setInterval(() => {
       this.count++;
       this.count < 4 ?  this.styleTransform(this.count) : this.count = -1;
