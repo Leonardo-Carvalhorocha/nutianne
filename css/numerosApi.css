@@ -1,0 +1,43 @@
+.numeros {
+  display: grid;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.numeros-dados {
+  display: flex;
+  text-align: center;
+  gap: 80px;
+}
+
+.numeros-dados h3 {
+  font-family: var(--fontFamily);
+  margin-top: 20px;
+  font-weight: 500;
+  color: var(--p1);
+  font-size: 22px;
+}
+
+.numeros-dados span{
+  font-family: var(--fontFamily); 
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media(max-width: 800px) {
+  .numeros-dados h3 {
+    font-size: 18px;
+  }
+  .numeros-dados span{
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 640px) {
+  .numeros-dados {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
