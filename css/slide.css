@@ -1,5 +1,6 @@
 .slide-container {
   background-color: var(--p3);
+  z-index: -2;
 }
 
 .slide {
