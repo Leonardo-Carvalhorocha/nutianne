@@ -8,6 +8,17 @@ export default function numerosApi() {
     return div;
   }
 
+  async function criarDados() {
+    try {
+      const dadosresponse = await fetch('/dadosApi.json');
+      const dadosJson = await dadosresponse.json();
+      dadosJson.forEach((dado) => preencherDados(dado));
+      numerosArray();
+    } catch (erro) {
+      console.log(erro);
+    }
+  }
+  
   function preencherDados(dado) {
     const divDadoPreenchido = createElementDados(dado);
     divNumerosDados.appendChild(divDadoPreenchido);
@@ -24,8 +35,7 @@ export default function numerosApi() {
   function animaNumeros(numero) {
     console.log(numero)
     const total = +numero.innerText;
-    const incremento = Math.floor(total / 15);
-    console.log(incremento)
+    const incremento = Math.floor(total / 10);
     let start = 0;
     const timer = setInterval(() => {
       start += incremento;
@@ -38,15 +48,5 @@ export default function numerosApi() {
     }, 80 * Math.random());
   }
 
-  async function criarDados() {
-    try {
-      const dadosresponse = await fetch('/dadosApi.json');
-      const dadosJson = await dadosresponse.json();
-      dadosJson.forEach((dado) => preencherDados(dado));
-      numerosArray();
-    } catch (erro) {
-      console.log(erro);
-    }
-  }
   return criarDados()
 };

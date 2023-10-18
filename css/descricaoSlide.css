@@ -29,24 +29,6 @@
   max-width: 31ch
 }
 
-.desc-slide button {
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-family: var(--fontFamily);
-  font-weight: 600;
-  color: var(--p0);
-  background: linear-gradient(var(--p2), var(--p1));
-  z-index: 1;
-  transition: .3s ease-in-out;
-  cursor: pointer;
-}
-
-.desc-slide button:hover {
-  transform: scale(110%);
-}
-
 @media(max-width: 700px) {
   .desc-slide p {
     font-size: 26px;

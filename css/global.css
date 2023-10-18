@@ -13,6 +13,24 @@ img {
   max-width: 100%;
 }
 
+.btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: var(--fontFamily);
+  font-weight: 600;
+  color: var(--p0);
+  background: linear-gradient(var(--p2), var(--p1));
+  z-index: 1;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(110%);
+}
+
 :root {
   --p0: #ffffff;
   --p1: #216872; /* utilizar no button liner */
