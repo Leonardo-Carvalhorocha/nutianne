@@ -6,6 +6,21 @@
   background: var(--p1);
   padding: 60px;
 }
+.pg-sobre {
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: var(--p1);
+  padding: 20px;
+}
+
+.pg-sobre .sobre {
+  display: grid;
+  justify-content: center;
+  padding: 0 20px;
+}
+
 .sobre {
   display: grid;
   gap: 40px;
