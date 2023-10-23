@@ -1,39 +1,13 @@
 export default function numerosApi() {
-  const divNumerosDados = document.querySelector('.numeros-dados');
-
-  function createElementDados(dado) {
-    const div = document.createElement('div');
-    div.innerHTML = `<h3>${dado.nomeDado}</h3><span>${dado.total}</span>`;
-    div.children[div.children.length - 1].classList.add('anima-numeros');
-    return div;
-  }
-
-  async function criarDados() {
-    try {
-      const dadosresponse = await fetch('/dadosApi.json');
-      const dadosJson = await dadosresponse.json();
-      dadosJson.forEach((dado) => preencherDados(dado));
-      numerosArray();
-    } catch (erro) {
-      console.log(erro);
-    }
-  }
-  
-  function preencherDados(dado) {
-    const divDadoPreenchido = createElementDados(dado);
-    divNumerosDados.appendChild(divDadoPreenchido);
-  };
+  const numbers = document.querySelectorAll('.dado-number');
 
   function numerosArray() {
-    const numeros = document.querySelectorAll('.anima-numeros');
-
-    [...numeros].map((numero) => {
-      animaNumeros(numero)
-    })
+    [...numbers].map((number) => animaNumeros(number))
   }
 
+  numerosArray();
+
   function animaNumeros(numero) {
-    console.log(numero)
     const total = +numero.innerText;
     const incremento = Math.floor(total / 10);
     let start = 0;
@@ -42,11 +16,8 @@ export default function numerosApi() {
       numero.innerText = start;
       if (start >= total) {
         numero.innerText = total;
-        console.log(numero)
         clearInterval(timer);
       }
-    }, 80 * Math.random());
+    }, 45 * Math.random());
   }
-
-  return criarDados()
 };
