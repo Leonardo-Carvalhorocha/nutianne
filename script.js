@@ -1,7 +1,8 @@
 import slide from './js/slide.js';
 import numerosApi from './js/numerosApi.js';
 import ScrollAnima from './js/anima-scroll.js';
-import MenuMobile from './js/menu-mobile.js';
+import MenuMobile from './js/MenuMobile.js';
+import Tooltip from './js/tooltip.js';
 
 const slideDesktop = new slide('.slide-desktop img', '.slide-desktop');
 slideDesktop.init()
@@ -14,5 +15,8 @@ scrollAnima.init();
 
 const menuMobile = new MenuMobile('#menu-mobile', '.nav');
 menuMobile.init();
+
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();
 
 numerosApi();

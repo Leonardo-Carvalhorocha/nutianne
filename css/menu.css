@@ -20,6 +20,14 @@
   gap: 40px;
 }
 
+.contato li {
+  transition: .3s ease-in-out;
+}
+
+.contato li:hover {
+  transform: scale(115%);
+}
+
 .nav-bg {
   background: var(--p1);
   border-top: 1px solid;
