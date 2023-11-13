@@ -11,7 +11,7 @@
 <body>
   <header class="menu-bg">
     <div id="menu">
-      <a href="./index.html"><img src="./imagens/icons/logo Dr Nutianne.svg" alt="logo"></a>
+      <a href="./"><img class="logo" src="./imagens/icons/logo_azul.png" width="705px" height="461px" alt="logo"></a>
       <button id="menu-mobile" aria-expanded="false">
         Menu
       </button>
@@ -29,16 +29,15 @@
   <section class="nav-bg">
     <nav>
       <ul class="nav">
-        <li><a href="./pages/contato.html">Atendimento</a></li>
-        <li><a href="./pages/gastroentereologista.html">Gastroenterologista</a></li>
-        <li><a href="./pages/saude.html">Saúde</a></li>
-        <li><a href="./pages/alimentacao.html">Alimentação</a></li>
-        <li><a href="./pages/sobre.html">Sobre</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#numeros">Números</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#slide">Slide</a></li>
       </ul>
     </nav>
   </section>
 
-  <section class="slide-container">
+  <section class="slide-container" id="inicio">
     <div>
       <ul class="slide slide-desktop">
         <li><img src="./imagens/img-slide.png" alt="imagem de familia"></li>
@@ -54,7 +53,7 @@
       </ul>
       <div class="desc-container">
         <div class="desc-slide">
-          <h1>Dr Nutianne</h1>
+          <img class="logo lg2" src="./imagens/icons/logo_branco.png" alt="nutianne" width="705px" height="461px">
           <p>Cuidando da sua saúde e bem estar! Para estar ao lado de quem você mais ama.</p>
           <button class="btn">Entrar em contato</button>
         </div>
@@ -62,7 +61,7 @@
     </div>
   </section>
 
-  <section class="numeros" data-anime="scroll">
+  <section class="numeros" data-anime="scroll" id="numeros">
     <div class="numeros-dados">
       <div>
         <h3>clientes</h3>
@@ -83,7 +82,7 @@
     </div>
   </section>
 
-  <section class="sobrebg" data-anime="scroll">
+  <section class="sobrebg" data-anime="scroll" id="sobre">
     <div class="sobre">
       <div>
         <h1>Sobre mim</h1>
@@ -94,6 +93,14 @@
       </div>
     </div>
   </section>
+
+  <article id="slide">
+    <nav>
+      <ul style="text-align: center;margin-top: 24px;">
+        <li>Aqui será o slide</li>
+      </ul>
+    </nav>
+  </article>
 
   <footer>
     <div class="footer">

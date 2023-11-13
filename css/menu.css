@@ -1,5 +1,5 @@
 .menu-bg {
-  background: var(--p1);
+  background: var(--p0);
   padding: 0 20px;
 }
 
@@ -13,6 +13,16 @@
   height: 100px;
 }
 
+.logo {
+  width: 400px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.lg2 {
+  margin: 0 auto;
+}
+
 .contato {
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +31,7 @@
 }
 
 .contato li {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .contato li:hover {
@@ -29,7 +39,7 @@
 }
 
 .nav-bg {
-  background: var(--p1);
+  background: var(--p0);
   border-top: 1px solid var(--p2);
   padding: 0 20px;
 }
@@ -48,11 +58,16 @@
 }
 
 .nav a {
-  color: var(--p0);
+  color: var(--p2);
   padding: 8px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.nav a:hover {
+.nav li:hover {
+  transition: 0.3s ease-in-out;
+}
+
+.nav li:hover {
   color: var(--p2);
+  transform: scale(110%);
 }

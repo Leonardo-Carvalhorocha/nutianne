@@ -21,9 +21,9 @@ img {
   font-family: var(--fontFamily);
   font-weight: 600;
   color: var(--p0);
-  background: linear-gradient(var(--p2), var(--p1));
+  background: linear-gradient(var(--p2), var(--p2));
   z-index: 1;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -34,7 +34,7 @@ img {
 :root {
   --p0: #ffffff;
   --p1: #216872; /* utilizar no button liner */
-  --p2: #238c9a; /* utilizar no button liner */
+  --p2: #5FC0C6; /* utilizar no button liner */
   --p3: #000000;
   --p4: #f2f2f2f2;
   --fontRegular: 400;
@@ -44,14 +44,13 @@ img {
   --fontFamilyDarling: 'Ingrid Darling', cursive;
 }
 
-[data-anime="scroll"] {
+[data-anime='scroll'] {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-[data-anime="scroll"].ativo {
+[data-anime='scroll'].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
-

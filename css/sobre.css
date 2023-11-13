@@ -3,7 +3,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  background: var(--p1);
+  background: var(--p2);
   padding: 60px;
 }
 .pg-sobre {
@@ -11,7 +11,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  background: var(--p1);
+  background: var(--p2);
   padding: 20px;
 }
 
@@ -41,7 +41,7 @@
 
 .sobre div p {
   font-family: var(--fontFamily);
-  font-size: 22px ;
+  font-size: 22px;
   font-weight: 200;
   color: var(--p0);
   max-width: 140vh;
@@ -51,7 +51,7 @@
   border-radius: 4px;
 }
 
-@media(max-width: 1180px) {
+@media (max-width: 1180px) {
   .sobre {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -61,7 +61,7 @@
   }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .sobre {
     display: flex;
     flex-wrap: wrap;
@@ -72,12 +72,11 @@
   }
 }
 
-@media(max-width: 600px) {
-  .sobre h1{
+@media (max-width: 600px) {
+  .sobre h1 {
     font-size: 28px;
   }
   .sobre p {
     font-size: 16px !important;
   }
 }
-

@@ -16,26 +16,26 @@
   font-family: var(--fontFamily);
   margin-top: 20px;
   font-weight: 500;
-  color: var(--p1);
+  color: var(--p2);
   font-size: 22px;
 }
 
-.numeros-dados span{
-  font-family: var(--fontFamily); 
+.numeros-dados span {
+  font-family: var(--fontFamily);
   font-size: 18px;
   font-weight: 500;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .numeros-dados h3 {
     font-size: 18px;
   }
-  .numeros-dados span{
+  .numeros-dados span {
     font-size: 16px;
   }
 }
 
-@media(max-width: 640px) {
+@media (max-width: 640px) {
   .numeros-dados {
     flex-direction: column;
     gap: 20px;

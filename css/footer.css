@@ -1,5 +1,5 @@
 footer {
-  background: var(--p1);
+  background: var(--p2);
   margin-top: 120px;
 }
 
@@ -16,15 +16,15 @@ footer {
 }
 
 .footer ul li {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, .5);
-  background: var(--p1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  background: var(--p2);
   padding: 5px 10px;
   border-radius: 4px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .footer ul li:hover {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .footer ul li a {
@@ -41,9 +41,9 @@ footer {
   padding: 20px;
 }
 
-@media(max-width: 420px) {
+@media (max-width: 420px) {
   .footer p {
-    font-size: 18px; 
+    font-size: 18px;
   }
   .footer ul {
     display: grid;
