@@ -27,19 +27,26 @@
     gap: 20px;
     transition: 0.3s ease-in-out;
   }
-  
-  .nav.ativo{
+
+  .nav.ativo {
     height: calc(100vh - 400px);
     visibility: visible;
     background: var(--p2);
     z-index: 100;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .contato {
     display: none;
   }
+}
+
+@media (max-width: 700px) {
   .logo {
-    width: 300px;
-  height: 100px;
+    width: 163px;
+    height: 130px;
+    margin: 0;
+  }
+  .lg2 {
+    margin: 0 auto !important;
   }
 }
